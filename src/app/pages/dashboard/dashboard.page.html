@@ -1,0 +1,52 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-title>Dashboard</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+  <ion-grid>
+    <ion-row>
+      <ion-col size="6" class="ion-text-center">
+        <ion-card
+          type="button"
+          button="true"
+          class="item-card"
+          (click)="goToCreateUser()"
+        >
+          <ion-card-content>Create Customer</ion-card-content>
+        </ion-card>
+      </ion-col>
+      <ion-col size="6" class="ion-text-center">
+        <ion-card
+          type="button"
+          button="true"
+          class="item-card"
+          (click)="goToUsers()"
+        >
+          <ion-card-content>All Customers</ion-card-content>
+        </ion-card>
+      </ion-col>
+      <ion-col size="6" class="ion-text-center">
+        <ion-card
+          type="button"
+          button="true"
+          class="item-card"
+          (click)="goToCreateProduct()"
+        >
+          <ion-card-content>Create Product</ion-card-content>
+        </ion-card>
+      </ion-col>
+      <ion-col size="6" class="ion-text-center">
+        <ion-card
+          type="button"
+          button="true"
+          class="item-card"
+          (click)="goToCreateOrder()"
+        >
+          <ion-card-content>Sell Product</ion-card-content>
+        </ion-card>
+      </ion-col>
+    </ion-row>
+  </ion-grid>
+</ion-content>

@@ -1,0 +1,26 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-buttons slot="start">
+      <ion-back-button text="Back"></ion-back-button>
+    </ion-buttons>
+    <ion-title>Orders</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+  <div *ngIf="orders.length == 0">
+    No Product Added Yet.
+  </div>
+  <div *ngIf="orders.length > 0">
+    <ion-list>
+      <ion-item lines="none" class="order-item" *ngFor="let order of orders">
+        <ion-label class="ion-text-capitalize"
+          >{{order.customer}} : {{order.product}}</ion-label
+        >
+        <ion-button slot="end" (click)="showOrder(order)"
+          >View Receipt</ion-button
+        >
+      </ion-item>
+    </ion-list>
+  </div>
+</ion-content>

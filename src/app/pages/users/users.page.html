@@ -1,0 +1,23 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-buttons slot="start">
+      <ion-back-button text="Back"></ion-back-button>
+    </ion-buttons>
+    <ion-title>Users</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+  <div *ngIf="users.length == 0">
+    No User Added Yet.
+  </div>
+  <div *ngIf="users.length > 0">
+    <ion-list *ngFor="let user of users">
+      <ion-item lines="none" class="user-item">
+        <ion-label class="ion-text-capitalize"
+          >{{user.name}} - {{user.location}}</ion-label
+        >
+      </ion-item>
+    </ion-list>
+  </div>
+</ion-content>

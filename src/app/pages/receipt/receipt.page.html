@@ -1,0 +1,32 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-title>Receipt: </ion-title>
+    <ion-icon
+      name="close"
+      size="large"
+      slot="end"
+      (click)="dismissModal()"
+    ></ion-icon>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+  <ion-grid>
+    <ion-row>
+      <ion-col>Customer Name</ion-col>
+      <ion-col class="ion-text-capitalize">{{order.customer}}</ion-col>
+    </ion-row>
+    <ion-row>
+      <ion-col>Product Name</ion-col>
+      <ion-col class="ion-text-capitalize">{{productInfo.name}}</ion-col>
+    </ion-row>
+    <ion-row>
+      <ion-col>Product Price</ion-col>
+      <ion-col>N{{productInfo.price}}</ion-col>
+    </ion-row>
+    <ion-row>
+      <ion-col>Order Date</ion-col>
+      <ion-col>{{order.orderDate}}</ion-col>
+    </ion-row>
+  </ion-grid>
+</ion-content>

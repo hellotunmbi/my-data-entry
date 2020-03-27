@@ -1,0 +1,73 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-buttons slot="start">
+      <ion-back-button text="Back"></ion-back-button>
+    </ion-buttons>
+    <ion-title>Sell Product</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+  <ion-grid>
+    <ion-row>
+      <ion-col>
+        <ion-item lines="none" class="custom-select">
+          <ion-label>Select Customer</ion-label>
+          <ion-select
+            interface="alert"
+            placeholder="Select Customer"
+            name="customer"
+            class="ion-text-capitalize"
+            [(ngModel)]="order.customer"
+          >
+            <ion-select-option value="Select Customer" selected="true"
+              >Select Customer</ion-select-option
+            >
+            <ion-select-option
+              value="{{user.name}}"
+              *ngFor="let user of users"
+              selected="false"
+            >
+              {{user.name}}</ion-select-option
+            >
+          </ion-select>
+        </ion-item>
+      </ion-col>
+    </ion-row>
+
+    <ion-row>
+      <ion-col>
+        <ion-item lines="none" class="custom-select">
+          <ion-label>Select Product</ion-label>
+          <ion-select
+            interface="alert"
+            placeholder="Select Product"
+            name="product"
+            [(ngModel)]="order.product"
+          >
+            <ion-select-option value="Select Product" selected="true"
+              >Select Product</ion-select-option
+            >
+            <ion-select-option
+              value="{{product.name}}"
+              *ngFor="let product of products; let i = index"
+              selected="false"
+            >
+              {{product.name}}</ion-select-option
+            >
+          </ion-select>
+        </ion-item>
+      </ion-col>
+    </ion-row>
+    <ion-row>
+      <ion-col *ngIf="message">{{message}}</ion-col>
+    </ion-row>
+    <ion-row>
+      <ion-col>
+        <ion-button expand="full" class="block" (click)="createOrder()"
+          >Create Customer Order</ion-button
+        >
+      </ion-col>
+    </ion-row>
+  </ion-grid>
+</ion-content>
