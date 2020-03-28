@@ -1,8 +1,8 @@
 ## MyDataEntry App built with Ionic 4
 
-[![](//imgur.com/a/5QYBl0o)](https://www.youtube.com/watch?v=9bxmk_YJXiI)
+[![MyDataEntry App](https://imgur.com/a/5QYBl0o)](https://www.youtube.com/watch?v=9bxmk_YJXiI)
 
-###Simple app with features:
+### Simple app with features:
 
 - Create Customer (name and location)
 - Create Product ( ID, Quantity and Price)
