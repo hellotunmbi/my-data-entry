@@ -1,4 +1,4 @@
-## MyDataEntry App built with Ionic 4
+## MyDataEntry App built with Ionic 5
 
 [![MyDataEntry App](https://imgur.com/a/5QYBl0o)](https://www.youtube.com/watch?v=9bxmk_YJXiI)
 
