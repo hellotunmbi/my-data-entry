@@ -1,5 +1,7 @@
 {
   "name": "My Data Entry",
-  "integrations": {},
+  "integrations": {
+    "cordova": {}
+  },
   "type": "angular"
 }

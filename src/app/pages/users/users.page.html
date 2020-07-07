@@ -7,16 +7,14 @@
   </ion-toolbar>
 </ion-header>
 
-<ion-content>
+<ion-content class="ion-padding">
   <div *ngIf="users.length == 0">
     No User Added Yet.
   </div>
   <div *ngIf="users.length > 0">
     <ion-list *ngFor="let user of users">
       <ion-item lines="none" class="user-item">
-        <ion-label class="ion-text-capitalize"
-          >{{user.name}} - {{user.location}}</ion-label
-        >
+        <ion-label class="ion-text-capitalize">{{user.name}} - {{user.location}}</ion-label>
       </ion-item>
     </ion-list>
   </div>

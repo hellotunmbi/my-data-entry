@@ -1,0 +1,40 @@
+{
+  "project_info": {
+    "project_number": "921649595684",
+    "firebase_url": "https://data-entry-17aaa.firebaseio.com",
+    "project_id": "data-entry-17aaa",
+    "storage_bucket": "data-entry-17aaa.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:921649595684:android:86fee1f86f1b3480ca9fb1",
+        "android_client_info": {
+          "package_name": "com.mydataentry.app"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "921649595684-ot428uemcn1tkd0tlnduge1repr28gsb.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyB4D1i9UsPYU8BhKw_-4AZ9GIT77d4WVwk"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "921649595684-ot428uemcn1tkd0tlnduge1repr28gsb.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

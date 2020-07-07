@@ -9,6 +9,7 @@ import { StatusBar } from "@ionic-native/status-bar/ngx";
 import { AppRoutingModule } from "./app-routing.module";
 import { AppComponent } from "./app.component";
 import { IonicStorageModule } from "@ionic/storage";
+import { FCM } from "cordova-plugin-fcm-with-dependecy-updated/ionic/ngx";
 
 @NgModule({
   declarations: [AppComponent],
@@ -18,16 +19,17 @@ import { IonicStorageModule } from "@ionic/storage";
     IonicModule.forRoot({
       rippleEffect: true,
       mode: "ios",
-      animated: true
+      animated: true,
     }),
     AppRoutingModule,
-    IonicStorageModule.forRoot()
+    IonicStorageModule.forRoot(),
   ],
   providers: [
     StatusBar,
     SplashScreen,
-    { provide: RouteReuseStrategy, useClass: IonicRouteStrategy }
+    FCM,
+    { provide: RouteReuseStrategy, useClass: IonicRouteStrategy },
   ],
-  bootstrap: [AppComponent]
+  bootstrap: [AppComponent],
 })
 export class AppModule {}

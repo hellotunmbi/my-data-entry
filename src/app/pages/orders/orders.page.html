@@ -7,19 +7,15 @@
   </ion-toolbar>
 </ion-header>
 
-<ion-content>
+<ion-content class="ion-padding">
   <div *ngIf="orders.length == 0">
-    No Product Added Yet.
+    No Order Created Yet.
   </div>
   <div *ngIf="orders.length > 0">
     <ion-list>
       <ion-item lines="none" class="order-item" *ngFor="let order of orders">
-        <ion-label class="ion-text-capitalize"
-          >{{order.customer}} : {{order.product}}</ion-label
-        >
-        <ion-button slot="end" (click)="showOrder(order)"
-          >View Receipt</ion-button
-        >
+        <ion-label class="ion-text-capitalize">{{order.customer}} : {{order.product}}</ion-label>
+        <ion-button slot="end" (click)="showOrder(order)">View Receipt</ion-button>
       </ion-item>
     </ion-list>
   </div>
